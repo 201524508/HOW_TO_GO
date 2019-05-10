@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.home.how_to_go.MainActivity"
+    android:baselineAligned="false">
+
+
+    <ImageButton
+        android:orientation = "vertical"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:src="@drawable/btn_seek"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_seek"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/btn_see"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:orientation = "vertical"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:src="@drawable/btn_see"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:id="@+id/btn_see"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btn_seek"
+        android:layout_alignStart="@+id/btn_seek" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/mainimg2"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageView"
+        android:layout_height="420dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

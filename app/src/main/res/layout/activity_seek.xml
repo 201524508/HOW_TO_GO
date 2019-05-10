@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="#dfe5ed">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="출발지 검색"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/search_startpoint"
+            android:textColorLink="?android:attr/colorPressedHighlight"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_search_finish"
+            android:layout_alignLeft="@+id/search_finishpoint"
+            android:layout_alignStart="@+id/search_finishpoint" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            app:srcCompat="@drawable/btn_search"
+            android:id="@+id/btn_search_start"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/search_startpoint"
+            android:layout_toRightOf="@+id/search_startpoint"
+            android:layout_toEndOf="@+id/search_startpoint" />
+
+        <EditText
+            android:layout_width="254dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="목적지 검색"
+            android:maxLines="1"
+            android:id="@+id/search_finishpoint"
+            android:textColorLink="?android:attr/colorPressedHighlight"
+            android:layout_below="@+id/search_startpoint" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            app:srcCompat="@drawable/btn_search"
+            android:id="@+id/btn_search_finish"
+            android:layout_height="45dp"
+            android:layout_below="@+id/search_startpoint"
+            android:layout_toRightOf="@+id/search_finishpoint"
+            android:layout_toEndOf="@+id/search_finishpoint" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/num2"
+        android:id="@+id/num2"
+        android:layout_below="@+id/num1"
+        android:layout_marginLeft="22dp"
+        android:layout_alignRight="@+id/num3"
+        android:layout_alignEnd="@+id/num3" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        app:srcCompat="@drawable/btn_search"
+        android:id="@+id/btn_search_2nd"
+        android:layout_height="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/btn_search_1st"
+        android:layout_alignLeft="@+id/btn_search_1st"
+        android:layout_alignStart="@+id/btn_search_1st" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        app:srcCompat="@drawable/btn_search"
+        android:id="@+id/btn_search_3th"
+        android:layout_height="45dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/btn_search_2nd"
+        android:layout_alignLeft="@+id/btn_search_2nd"
+        android:layout_alignStart="@+id/btn_search_2nd" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/remove"
+        android:id="@+id/btn_remove_3th"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:layout_above="@+id/btn_remove_4th"
+        android:layout_toRightOf="@+id/btn_search_3th"
+        android:layout_toEndOf="@+id/btn_search_3th"
+        android:layout_marginBottom="6dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/remove"
+        android:id="@+id/btn_remove_4th"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/btn_search_3th"
+        android:layout_toRightOf="@+id/btn_search_3th"
+        android:layout_toEndOf="@+id/btn_search_3th" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/num3"
+        android:visibility="invisible"
+        android:id="@+id/num3"
+        android:layout_below="@+id/search_second"
+        android:layout_alignRight="@+id/num4"
+        android:layout_marginLeft="22dp"
+        android:layout_alignEnd="@+id/num4" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/num4"
+        android:id="@+id/num4"
+        android:visibility="invisible"
+        android:layout_marginLeft="22dp"
+        android:layout_below="@+id/search_third"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        app:srcCompat="@drawable/btn_search"
+        android:id="@+id/btn_search_4th"
+        android:visibility="invisible"
+        android:layout_height="45dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/search_third"
+        android:layout_alignRight="@+id/btn_bus"
+        android:layout_alignEnd="@+id/btn_bus" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/add"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/btn_car"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:id="@+id/add"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_bus_s"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_bus"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="90dp"
+        android:hint = "경유지1 검색"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_height="50dp"
+        android:id="@+id/search_first"
+        android:textColorLink="?android:attr/colorPressedHighlight"
+        android:layout_above="@+id/search_second"
+        android:layout_toRightOf="@+id/num2"
+        android:layout_toEndOf="@+id/num2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="90dp"
+        android:layout_height="50dp"
+        android:hint = "경유지2 검색"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:id="@+id/search_second"
+        android:textColorLink="?android:attr/colorPressedHighlight"
+        android:layout_below="@+id/num1"
+        android:layout_toRightOf="@+id/num2"
+        android:layout_toEndOf="@+id/num2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="90dp"
+        android:layout_height="50dp"
+        android:imeOptions="actionSearch"
+        android:hint="경유지3 검색"
+        android:inputType="text"
+        android:maxLines="1"
+        android:id="@+id/search_third"
+        android:visibility="invisible"
+        android:textColorLink="?android:attr/colorPressedHighlight"
+        android:layout_below="@+id/search_second"
+        android:layout_toRightOf="@+id/num3"
+        android:layout_toEndOf="@+id/num3" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/num1"
+        android:id="@+id/num1"
+        android:layout_below="@+id/go"
+        android:layout_toLeftOf="@+id/search_first"
+        android:layout_toStartOf="@+id/search_first" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="90dp"
+        android:layout_height="50dp"
+        android:hint="경유지4 검색"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:visibility="invisible"
+        android:id="@+id/search_fourth"
+        android:textColorLink="?android:attr/colorPressedHighlight"
+        android:layout_below="@+id/search_third"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/num4"
+        android:layout_toEndOf="@+id/num4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/car"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:id="@+id/go"
+        android:layout_alignLeft="@+id/num1"
+        android:layout_alignStart="@+id/num1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_car_s"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_car"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/btn_bus"
+        android:layout_alignLeft="@+id/num4"
+        android:layout_alignStart="@+id/num4" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        app:srcCompat="@drawable/btn_search"
+        android:id="@+id/btn_search_1st"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/search_first"
+        android:layout_alignLeft="@+id/btn_search_4th"
+        android:layout_alignStart="@+id/btn_search_4th" />
+
+
+</RelativeLayout>
